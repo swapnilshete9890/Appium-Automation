@@ -21,7 +21,7 @@ public class AutomateWebsiteInMobileChromeBrowser {
 		options.setPlatformVersion("13");
 		options.setAutomationName("UiAutomator2");
 		options.withBrowserName("Chrome");
-		options.setChromedriverExecutable("D:\\WorkSpace2025Eclipse\\AppiumProject2025\\driver\\chromedriver.exe");
+		options.setChromedriverExecutable(System.getProperty("user.dir") + "/driver/chromedriver.exe");
 				
 		URL url =  URI.create("http://127.0.0.1:4723/").toURL();
 		
